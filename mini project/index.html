@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to your new CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Guess the Number</h1>
+        <p>I'm thinking of a number between 1 and 100. Can you guess it?</p>
+
+        <!-- Input area -->
+        <div id="game-input-area">
+            <input type="number" id="guess-input" class="guess-input" min="1" max="100">
+            <button id="submit-btn" class="guess-btn">Submit</button>
+        </div>
+
+        <!-- Message and Count -->
+        <div class="message-area">
+            <p id="message"></p>
+        </div>
+        <p class="guess-count">Guesses: <span id="guess-count">0</span></p>
+
+        <!-- Play Again Button -->
+        <button id="play-again-btn">Play Again</button>
+    </div>
+
+    <!-- Link to your new JavaScript file -->
+    <!-- 'defer' tells the browser to wait for the HTML to load first -->
+    <script src="script.js" defer></script>
+
+</body>
+</html>
